@@ -486,7 +486,7 @@ public class PictureSelectorActivity extends PictureBaseActivity implements View
         boolean eqVideo = PictureMimeType.eqVideo(mimeType);
         if (eqVideo) {
             if (image.getDuration() > 16 * 1000) {
-                ToastUtils.s(getContext(), "请选择不超过15秒的视频");
+                ToastUtils.s(getContext(), "视频不能超过15秒");
                 return;
             }
         }
